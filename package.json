@@ -1,0 +1,29 @@
+{
+  "name": "distro-security-detail",
+  "version": "1.0.0",
+  "description": "Custom discord.js bot for my server The Distro https://discord.io/the-distro",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Installing necessary scripts\" && npm install @discordjs/rest discord-api-types discord.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/functnal/distro-security-detail.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "javascript"
+  ],
+  "author": "Brent Williams",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/functnal/distro-security-detail/issues"
+  },
+  "homepage": "https://github.com/functnal/distro-security-detail#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.31.1",
+    "discord.js": "^13.6.0"
+  }
+}
