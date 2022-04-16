@@ -5,7 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Installing necessary scripts\" && npm install @discordjs/rest discord-api-types discord.js",
-	"nm":"nodemon bot.js"
+    "nm": "nodemon bot.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "@discordjs/rest": "^0.3.0",
     "discord-api-types": "^0.31.1",
     "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0"
   }
 }
