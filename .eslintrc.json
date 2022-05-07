@@ -28,7 +28,7 @@
 		"no-lonely-if": "off",
 		"object-curly-spacing": ["error", "always"],
 		"prefer-const": "warn",
-		"quotes": ["error", "backtick"],
+		"quotes": ["error", "single"],
 		"semi": "error",
 		"no-trailing-spaces": "off",
 		"space-before-blocks": ["error", "never"],
