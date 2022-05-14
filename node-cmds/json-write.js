@@ -15,14 +15,29 @@ class JSONFileWrite
 	* @param {string} name of the file The power.
 	*/
 	
+	//TODO: I know current pathTO is incorrect and will return a directory ending with node-cmds. 
 	constructor(pathTo, filename)
 	{
 		if(pathTo == undefined || filename == undefined)
 			throw new FormatError(pathTo, filename);
 
-		this.dir = path.dirname;
-		this.pathTo = pathTo;
+		this.pathTo = path.resolve(__dirname,pathTo);
 		this.filename = filename;
+		this.data;
+	}
+
+	async readFile()
+	{
+		try 
+		{
+			data = await fs.readFile(`${this.pathTo}/${this.filename}`);
+			console.log('=============');
+			console.log(data);
+		} 
+		catch (err) 
+		{
+			console.log(err);
+		}
 	}
 }
 
@@ -72,3 +87,5 @@ class FormatError
 		console.error(this.error);
 	}
 }
+
+export { JSONFileWrite };
