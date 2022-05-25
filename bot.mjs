@@ -1,7 +1,11 @@
 //Requried Dependencies
-const { Client, Collection, Intents } = require('discord.js');
-const config = require('./config.json');
-const fs = require('node:fs');
+import { Client, Collection, Intents } from 'discord.js';
+import { createRequire } from 'module';
+import config from './config.json' assert { type: 'json' };
+import fs from 'node:fs';
+
+const require = createRequire(import.meta.url)
+
 
 //List of DISCORD INTENTS
 const INTENTS  = 
@@ -42,7 +46,7 @@ for(const file of commandFiles)
 client.once('ready', () =>
 {
 	console.log('Client Initialized...');
-
+adaw
 	// client.channels.fetch(config.baseChannel)
 	// 	.then(channel =>
 	// 	{

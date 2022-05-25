@@ -3,6 +3,11 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { token, clientId, guildId } = require('./config.json');
 
+import fs from 'node:fs';
+import { REST } from '@discordjs/rest';
+import { Routes } from 'discord-api-types/v9';
+import { token, clientId, guildId } from './config.json' assert { type: 'json' }
+
 //Creating commands
 const commands = [];
 //Getting all files in the commands dir with .js ending
