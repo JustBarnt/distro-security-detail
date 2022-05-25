@@ -1,10 +1,10 @@
 //Requried Dependencies
 import { Client, Collection, Intents } from 'discord.js';
 import { createRequire } from 'module';
-import config from './config.json' assert { type: 'json' };
 import fs from 'node:fs';
 
-const require = createRequire(import.meta.url)
+const require = createRequire(import.meta.url);
+const config = require('./config.json');
 
 
 //List of DISCORD INTENTS
@@ -32,7 +32,7 @@ const INTENTS  =
 const client = new Client({ intents: INTENTS });
 client.commands = new Collection();
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.mjs'));
 
 for(const file of commandFiles)
 {
@@ -46,7 +46,6 @@ for(const file of commandFiles)
 client.once('ready', () =>
 {
 	console.log('Client Initialized...');
-adaw
 	// client.channels.fetch(config.baseChannel)
 	// 	.then(channel =>
 	// 	{
