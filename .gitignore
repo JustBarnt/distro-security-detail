@@ -19,3 +19,4 @@ config.json
 
 #build / generate output
 dist
+data
