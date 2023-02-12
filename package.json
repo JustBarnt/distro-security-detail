@@ -144,7 +144,7 @@
     "canvas": "^2.9.1",
     "discord-api-types": "^0.31.1",
     "discord.js": "^13.6.0",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "eslint": "^8.13.0"
